@@ -1,22 +1,45 @@
   
 <template>
-  <v-app>
-    <h1>Munazam up your life!</h1>
-     <router-link to="/">Lista</router-link>
-     <router-link to="/add">Add</router-link>
+ <v-app class="app">
+  
+    
     <v-main>
-      <router-view></router-view>
+      <Header />
+      <v-navigation-drawer>
+      <Menu class="menu" />
+      </v-navigation-drawer>
+     
+      <v-container fluid="false">
+        <router-view></router-view>
+      </v-container>
+      
     </v-main>
   </v-app>
+
+   
 </template>
 
 <script>
+import Header from './pages/Menu/Header.vue';
+import Menu from './pages/Menu/Menu.vue';
 export default {
-  name: "App"
+  name: "app",
+  
+    components:{
+      Header,
+      Menu,
+    }
+  
 };
 </script>
 <style scoped>
-    .app{
-    color:rgb(129, 20, 172),
-    }
+  .app { 
+    color:lightcoral;
+  
+  }
+  .menu{
+    grid:6rem;
+  }
+  
+
 </style>

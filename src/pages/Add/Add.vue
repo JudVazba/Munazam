@@ -1,17 +1,11 @@
 <template>
-
-  <v-app>
-  
-
-
-  <h2> Aquí van las listas creadas</h2>
-
-  </v-app>
+<div >
+  <h2 class="centred-text"> Crear Lista</h2>
+</div>
 
   </template>
-
 <script>
-export default{
-  name: "Add"
+export default {
+  
 }
 </script>
