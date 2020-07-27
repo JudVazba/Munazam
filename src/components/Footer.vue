@@ -1,7 +1,9 @@
 <template>
 
   <v-footer absolute >
-    <v-row>
+    <v-row
+       align="center"
+       justify="center">
       <router-link to="/">
      <v-btn >
       <v-icon>mdi-home</v-icon>
