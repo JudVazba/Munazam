@@ -1,6 +1,6 @@
 <template>
 
-  <v-footer absolute >
+  <v-footer app absolute >
  
     <v-row
        align="center"

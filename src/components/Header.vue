@@ -1,6 +1,8 @@
 <template>
   <div class ="header__title">
+   
     <h2>Munazam Up Your Life!</h2>
+    
   </div> 
 </template>
   
