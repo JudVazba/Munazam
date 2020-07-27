@@ -1,45 +1,35 @@
   
 <template>
- <v-app class="app">
-  
-    
-    <v-main>
-      <Header />
-      <v-navigation-drawer>
-      <Menu class="menu" />
-      </v-navigation-drawer>
-     
-      <v-container fluid="false">
-        <router-view></router-view>
-      </v-container>
-      
-    </v-main>
-  </v-app>
-
+ <v-app>
    
+      <Header/>
+      <v-spacer></v-spacer>
+      <Menu/> 
+      <v-footer>
+        <Footer/>
+      </v-footer>
+    <v-main>
+      
+         <router-view>
+           <App/>
+        </router-view>
+    
+     </v-main>
+  </v-app>
 </template>
 
 <script>
-import Header from './pages/Menu/Header.vue';
-import Menu from './pages/Menu/Menu.vue';
+import Header from "./components/Header.vue";
+import Menu from "./components/Menu.vue";
+import Footer from "./components/Footer.vue";
 export default {
   name: "app",
-  
-    components:{
+  components:{
       Header,
       Menu,
+      Footer,
     }
   
 };
 </script>
-<style scoped>
-  .app { 
-    color:lightcoral;
-  
-  }
-  .menu{
-    grid:6rem;
-  }
-  
 
-</style>
