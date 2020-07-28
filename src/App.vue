@@ -5,16 +5,15 @@
       <Header/>
       <v-spacer></v-spacer>
       <Menu/> 
-      <v-footer>
-        <Footer/>
-      </v-footer>
     <v-main>
       
          <router-view>
-           <App/>
         </router-view>
     
      </v-main>
+     <v-footer>
+        <Footer/>
+      </v-footer>
   </v-app>
 </template>
 

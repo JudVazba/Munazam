@@ -2,17 +2,15 @@
     "items": [
       {
         "id": 1,
-        "name": "camiseta",
-        "comment": true,
-        "ammount": 5,
-        "bought": true
+        "producto": "camiseta",
+        "cantidad": 5,
+        "bought":true
       },
       {
         "id": 2,
-        "name": "falda",
-        "ammount": 1,
-        "comment": true,
-        "bought": false
+        "producto": "falda",
+        "cantidad": 1,
+        "bought":false
       }
     ]
   }

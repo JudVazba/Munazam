@@ -1,6 +1,6 @@
 <template>
 
-  <v-navigation-drawer class="botones_menu">
+  <v-navigation-drawer app class="botones_menu">
    
   
 
